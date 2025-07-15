@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+ /*font-family: "PT Serif", serif;*/
+ body {
+    font-family: "PT Serif", serif;
+ }
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 16px;
+    color: red;
+    font-size: 40px;
+
+}
+h2 {
+    margin: 16px;
+   display: flex;
+   justify-content: center;
+}
+h3 {
+    margin: 16px;
+}
+li {
+    margin: 16px;
+}
+p {
+    margin: 16px;
+    color: blue
+}
+
+.tituloprimerpagina {
+     color: green;
+     margin: 16px;
+     padding: 16px;
+     background-color: purple;
+     border: 3px solid black;
+   
+     /*margin: 16px 14px 12px 10px;*/
+     /*margin: 16px 10px;*/
+     /*margin-top: 16px;
+     margin-right: 14px;
+     margin-bottom: 12px;
+     margin-left: 10px;*/
+}
+.nav-li {
+    list-style-type: none;
+}
+.nav-link {
+    color: black;
+    width: 100px;
+    height: 80pxS;
+    text-decoration: none;
+    margin: 16px 8px 16px 16px;
+    padding: 12px;
+    border: 2px solid black;
+}
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.p-titulo {
+    margin: 16px;
+    padding: 16px;
+    font-size: 20px;
+}
+.boton {
+    display: flex;
+    justify-content: space-evenly ;
+    align-items: center;
+    width: 50%;
+    flex-direction: column;
+    text-decoration: none;
+    margin: 16px;
+    padding: 6px;
+    border: 1px solid black;
+    border-radius: 12px;
+    background-color: yellowgreen;
+}
+div a img{
+    width: 200px;
+    margin: 5px 20px;
+    
+}
+div h3{
+    margin: 5px 20px;
+    padding: 5px 20px;
+}
+h4 {
+    color: black;
+    font-size: 14px;
+}
+
+.reseñas {
+    color: black;
+    font-size: 20;
+}
+div{
+    display: inline-block;
+}
+.noel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+}
+.texto-noel {
+    margin: 16px;
+}
+.ref {
+    margin: 16px;
+}
+.ref-titulos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+}
+footer {
+    margin: 16px;
+}
+.planes {
+    display: inline;
+    background-color: yellow;
+    border: 2px solid black;
+    justify-content: center;
+}
+.img-yoga {
+    margin: 8px 16px 16px 16px;
+}
+.locales {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
