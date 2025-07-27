@@ -4,33 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quien soy</title>
+     <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <!--CSS-->
     <link rel="stylesheet" href="../Styles/Style.css">
 </head>
 <body>
     <header>
     <img src="../Assets/Imagenes/NoeNutri-Logo-transparente-negro.jpg" alt="">
-    <nav class="links">
-       
-         <a class="nav-link" href="../index.html">Home</a>
-
-         <a class="nav-link" href="#">Quien soy</a>
-                
-         <a class="nav-link" href="./planes.html">Planes</a>
-
-         <a class="nav-link" href="./contacto.html">Contacto</a>
-             
-         <a class="nav-link" href="./reseñas.html">Reseñas</a>
-    </nav>
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+     <div class="container-fluid">
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"      aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link my-nav-link" aria-current="page" href="../index.html">Home</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link my-nav-link" aria-current="page" href="#">Quien soy</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link my-nav-link" aria-current="page" href="./planes.html">Planes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link my-nav-link" aria-current="page" href="./contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link my-nav-link" aria-current="page" href="./reseñas.html">Reseñas</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        Navbar text with an inline element
+      </span>
+    </div>
+  </div>
+</nav>
 
     </header>
 
     <main>
         <h1>Noel Franzi</h1>
+        <section class="quien-soy-main-content">
         <img class="noel" src="../Assets/Imagenes/Noel-Franzi-Neonutri.webp" alt="">
         <p class="texto-noel">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, ipsam saepe ipsum expedita at velit minus illum odit exercitationem iure. Dignissimos ad exercitationem tenetur tempore voluptas rem ullam, asperiores impedit!
         Obcaecati pariatur fuga commodi neque tempore maiores necessitatibus consectetur dolorum sapiente nemo nostrum soluta voluptas porro hic ut odio reprehenderit ab, quod excepturi? Nemo at doloribus quam molestias corrupti. Nulla.
         Expedita sequi, illum necessitatibus nisi obcaecati quaerat quidem aperiam. Obcaecati aperiam esse vero doloremque vel amet quos, aliquid eligendi neque repellendus iure quae id illo maiores, at nobis. Aspernatur, esse!</p> <!--Breve resumen de la experiencia y los estudios de Noel.-->
+        </section>
         <h2 class="ref">Referencias:</h2>
         <ul class="ref-titulos">
             <li>
@@ -41,7 +62,6 @@
              </li>
 
         </ul>
-        
     </main>
 
     <footer>
@@ -50,5 +70,8 @@
         
 
     </footer>
+
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>

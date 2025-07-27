@@ -1,39 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reseñas</title>
+     <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <!--CSS-->
     <link rel="stylesheet" href="../Styles/Style.css">
 </head>
 <body>
-     <header>
+   <header>
     <img src="../Assets/Imagenes/NoeNutri-Logo-transparente-negro.jpg" alt="">
-   <nav class="links">
-         <a class="nav-link" href="../index.html">Home</a>
-
-         <a class="nav-link" href="./quien-soy.html">Quien soy</a>
-                
-         <a class="nav-link" href="./planes.html">Planes</a>
-
-         <a class="nav-link" href="./contacto.html">Contacto</a>
-                    
-         <a class="nav-link" href="#">Reseñas</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+     <div class="container-fluid">
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"      aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+        <a class="nav-link my-nav-link" aria-current="page" href="../index.html">Home</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link my-nav-link" aria-current="page" href="./quien-soy.html">Quien soy</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link my-nav-link" aria-current="page" href="./planes.html">Planes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link my-nav-link" aria-current="page" href="./contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link my-nav-link" aria-current="page" href="#">Reseñas</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        Navbar text with an inline element
+      </span>
+     </div>
+     </div>
     </nav>
 
     </header>
 
     <main>
         <h1>Mis clientes</h1>
-        
+        <section class="main-reseñas">
+        <div class="coment-1">
+        <img src="../Assets/Imagenes/50x50.png" alt="">
         <p class="reseñas">Marcelo: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quasi sequi. Assumenda consequuntur non officia, eligendi iste officiis, laborum, quas quibusdam ab error fugiat rerum. Nihil provident similique error placeat.</p>
-       
+        </div>
+
+        <div class="coment-2">
+        <img src="../Assets/Imagenes/50x50.png" alt="">
         <p class="reseñas">Natalia: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis repellat earum minus est praesentium, reprehenderit consectetur labore odit, porro incidunt ut autem consequuntur. Temporibus dicta ipsam perferendis maiores ab vero.
         Atque sapiente eligendi, voluptatum omnis reprehenderit id corporis sed, itaque laudantium corrupti repellendus, repellat totam quo exercitationem voluptates quos ipsa magni possimus! Neque, officia! Porro placeat assumenda optio fuga consequatur!
         Vitae suscipit laborum nemo. Hic atque quidem unde quibusdam libero suscipit consequuntur ut eum temporibus quis similique nostrum debitis, corporis architecto at, nulla veniam enim veritatis aperiam. Enim, eveniet tempora?</p>
-        
+        </div>
+
+        <div class="coment-3">
+         <img src="../Assets/Imagenes/50x50.png" alt="">
         <p class="reseñas">Nicolas: Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odit sunt ducimus ipsa et temporibus labore quibusdam suscipit! Reprehenderit magnam vel aut aliquid facilis, incidunt nobis magni excepturi nisi fuga?</p>
+        </div>
+        </section>
+        <h2>Enviame tu consulta, y en breves te respondere, gracias!</h2>
+        <div class="container-boots">
+        <form class="my-form">
+    
+        <div>
+        <label for="email" class="my-form-label">Dirección de email</label>
+        <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+        </div>
+
+        <div>
+      <label for="comentario" class="my-form-label">Consulta...</label>
+      <textarea class="form-control" id="comentario" rows="1" placeholder="Escribe tu comentario..."></textarea>
+        </div>
+
+        <div class="align-self-end">
+      <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+
+  </form>
+</div>
+
+
     </main>
 
     <footer>
@@ -41,5 +93,7 @@
         <h4>@Lic.Noel franzi todos los derechos reservados</h4>
 
     </footer>
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>

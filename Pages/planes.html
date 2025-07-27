@@ -4,22 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planes</title>
+     <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <!--CSS-->
     <link rel="stylesheet" href="../Styles/Style.css">
 </head>
 <body>
     <header>
     <img src="../Assets/Imagenes/NoeNutri-Logo-transparente-negro.jpg" alt="">
-   <nav class="links">
-         <a class="nav-link" href="../index.html">Home</a>
-
-         <a class="nav-link" href="./quien-soy.html">Quien soy</a>
-                
-         <a class="nav-link" href="#">Planes</a>
-
-         <a class="nav-link" href="./contacto.html">Contacto</a>
-                    
-         <a class="nav-link" href="./reseñas.html">Reseñas</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+     <div class="container-fluid">
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"      aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link my-nav-link" aria-current="page" href="../index.html">Home</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link my-nav-link" aria-current="page" href="./quien-soy.html">Quien soy</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link my-nav-link" aria-current="page" href="#">Planes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link my-nav-link" aria-current="page" href="./contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link my-nav-link" aria-current="page" href="./reseñas.html">Reseñas</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        Navbar text with an inline element
+      </span>
+     </div>
+     </div>
     </nav>
 
     </header>
@@ -27,45 +47,47 @@
     <main>
         <h1>Planes Nutricionales</h1>
 
-        <section>
-            
-             <h2 class="planes">Plan Completo:</h2>
-             <article class="tabla-planes">
-             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, corrupti aut! Temporibus voluptatum architecto nobis eaque sequi quae incidunt quaerat sunt voluptate, expedita sint ut enim atque rerum quam vel.</p>
-             <h3>Beneficios:</h3>
-         <ul> 
-             <li>Consultas privadas todas las semanas.</li>
-             <li>Plan  de dieta + plan  de ejercicios completo.</li>
-             <li>Instrumento para medir la presion de regalo.</li>
-         </ul>
-             </article>
+        <section class="grid-container">
 
-             <h2 class="planes">Plan Intermedio:</h2>
-             <article class="tabla-planes">
-             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et recusandae vel minima enim optio unde ut quas tenetur asperiores saepe! Dolores omnis voluptate, architecto eaque beatae harum neque dolore quisquam.</p>
-             <h3>Beneficios:</h3>
-         <ul>
-             <li>Consultas privadas una vez al mes</li>
-             <li>Plan de dieta completo</li>
-         </ul>
-             </article>
+                 <h2 class="title-complete-plan">Plan Completo:</h2>
+                 <div class="complete-plan">
+                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, corrupti aut! Temporibus voluptatum architecto nobis eaque sequi quae incidunt quaerat sunt voluptate, expedita sint ut enim atque rerum quam vel.</p>
+                 <h3>Beneficios:</h3>
+             <ul> 
+                 <li>Consultas privadas todas las semanas.</li>
+                 <li>Plan  de dieta + plan  de ejercicios completo.</li>
+                 <li>Instrumento para medir la presion de regalo.</li>
+             </ul>
+                </div>
 
-             <h2 class="planes">Plan Basico:</h2>
-             <article class="tabla-planes">
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus corporis ipsum dicta sit adipisci labore inventore! Tenetur accusamus quos veniam repellat modi voluptates tempora! Obcaecati non in alias perferendis aspernatur?</p>
-             <h3>Beneficios:</h3>
-          <ul>
-             <li>Consulta privada unica</li>
-             <li>Plan de dieta completo</li>
-         </ul>
-             </article>
-     </section>
+                 <h2 class="title-intermediate-plan">Plan Intermedio:</h2>
+                 <div class="intermediate-plan">
+                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et recusandae vel minima enim optio unde ut quas tenetur asperiores saepe! Dolores omnis voluptate, architecto eaque beatae harum neque dolore quisquam.</p>
+                 <h3>Beneficios:</h3>
+             <ul>
+                 <li>Consultas privadas una vez al mes</li>
+                 <li>Plan de dieta completo</li>
+             </ul>
+            </div>
 
-    </main>
+                 <h2 class="title-basic-plan">Plan Basico:</h2>
+                <div class="basic-plan">
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus corporis ipsum dicta sit adipisci labore inventore! Tenetur accusamus quos veniam repellat modi voluptates tempora! Obcaecati non in alias perferendis aspernatur?</p>
+                 <h3>Beneficios:</h3>
+              <ul>
+                 <li>Consulta privada unica</li>
+                 <li>Plan de dieta completo</li>
+             </ul>
+            </div>
+         </section>
 
-    <footer>
+       </main>
+
+      <footer>
         <h4>@Lic.Noel franzi todos los derechos reservados</h4>
 
     </footer>
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
