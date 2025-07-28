@@ -4,9 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
  /*font-family: "PT Serif", serif;*/
- body {
-    font-family: "PT Serif", serif;
- }
+body{
+        font-family: "PT Serif", serif;
+        background-color: #f8f9fa
+}
 
 h1 {
    @include mixins.flex(row, center, center);
