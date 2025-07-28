@@ -1,0 +1,52 @@
+ //aca van los boton, h1,h2,(etc)// 
+@use "../ultility/variables";
+@use "../ultility/mixins";
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+ /*font-family: "PT Serif", serif;*/
+ body {
+    font-family: "PT Serif", serif;
+ }
+
+h1 {
+   @include mixins.flex(row, center, center);
+     font-size: 40px;
+     color: green;
+     margin: 16px;
+     padding: 16px;
+     background-color: variables.$aquamarine;
+     border: 3px solid black;
+}
+h2 {
+    margin: 16px;
+   display: flex;
+   justify-content: center;
+}
+h3 {
+    @include mixins.flex(row, start, center);
+    margin: 16px;
+}
+h4 {
+    color: black;
+    font-size: 14px;
+}
+li {
+    margin: 16px;
+}
+p {
+    margin: 16px;
+    color: blue
+}
+div h3{
+    margin: 5px 20px;
+    padding: 5px 20px;
+}
+.img {
+transition: filter 0.3s ease;
+&:hover {
+    filter: brightness(75%);
+  }
+}
+div{
+    display: inline-block;
+}

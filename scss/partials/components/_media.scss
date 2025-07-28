@@ -1,0 +1,51 @@
+//media-index//
+@use "../ultility/mixins";
+@use "../ultility/variables";
+@media (max-width: 450px) {
+    .nav-link{
+    font-size: 14px;
+    color: black;
+    width: 70px;
+    height: 50px;
+    text-decoration: none;
+    margin: 8px;
+    padding: 6px;
+    border: 2px solid black;
+    }
+    .noe-nutri{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 300px
+    }
+    .boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 12px;
+    background-color: yellowgreen;
+    margin: 0 auto;
+    }
+    .locales{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    max-width: 100px;
+    gap: 20px;
+    }
+    .img{
+        width: 120px;
+    }
+    .store-names{
+    font-size: 14px;
+    }
+    .footer-index{
+        display: flex;
+        justify-content: center;
+    }
+    
+}

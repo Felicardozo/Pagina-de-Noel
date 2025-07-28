@@ -1,0 +1,36 @@
+@use "../ultility/mixins";
+@use "../ultility/variables";
+.nav-li {
+    
+    list-style-type: none;
+}
+.navbar-nav{
+margin: 0 auto;
+gap: 100px;
+}
+.my-nav-link {
+    @include mixins.flex(row, center, center);
+    color: black;
+    width: 100px;
+    height: 80px;
+    text-decoration: none;
+    margin: 16px 8px 16px 16px;
+    padding: 12px;
+    border: 2px solid black;
+
+    &:hover{
+        color: variables.$hover-text;
+        background-color: rgb(133, 133, 133);
+    }
+}
+.navbar-mio {
+    background-color: rgb(255, 255, 255);
+    padding: 16px 24px;
+}
+.nav-link-mio {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    transition: color 0.3s;
+}

@@ -1,0 +1,128 @@
+@use "../ultility/mixins";
+@use "../ultility/variables";
+//MAIN HTML//
+
+.tituloprimerpagina {
+     color: green;
+     margin: 16px;
+     padding: 16px;
+     background-color: variables.$aquamarine;
+     border: 3px solid black;
+    }
+    .p-titulo {
+    margin: 16px;
+    padding: 16px;
+    font-size: 20px;
+}
+.boton {
+    @include mixins.flex(row, center, center);
+    width: 10%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 12px;
+    background-color: yellowgreen;
+    margin: 0 auto;
+}
+.locales {
+    @include mixins.flex(row, space-evenly, center)
+}
+div a img{
+    width: 200px;
+    margin: 5px 20px;
+    
+}
+//QUIEN SOY?//
+.quien-soy-main-content{
+    margin: 80px;
+    @include mixins.flex(row, center, center);
+    gap: 80px;
+}
+.ref {
+    margin: 16px;
+}
+.ref-titulos {
+    @include mixins.flex(row, center, center);
+    margin: 16px;
+}
+//PLANES//
+.grid-container{
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "title-complete-plan title-intermediate-plan title-basic-plan"
+    "complete-plan       intermediate-plan       basic-plan";
+  gap: 20px;
+  padding: 20px;
+  background-color: yellow;
+  border: 2px solid black;
+  max-width: 1200px;
+  margin: 0 auto;
+  }
+
+.title-complete-plan{
+     grid-area: Plan Completo;
+     text-align: center;
+}
+ /*titulos*/
+.title-intermediate-plan{
+     grid-area: Plan intermedio;
+     text-align: center;
+}
+.title-basic-plan{
+    grid-area: Plan basico;
+    text-align: center;
+}
+ /*planes*/
+.complete-plan{
+    grid-area: complete-plan;
+    background-color: aquamarine;
+    border: 1px solid black;
+    padding: 15px;
+}
+.intermediate-plan{
+    grid-area: intermediate-plan;
+    background-color: aquamarine;
+    border: 1px solid black;
+    padding: 15px;
+}
+.basic-plan{
+    grid-area: basic-plan;
+    background-color: aquamarine;
+    border: 1px solid black;
+    padding: 15px;
+}
+//RESEÑAS//
+.coment-1{
+    @include mixins.flex(row, center, center);
+}
+.coment-2{
+    @include mixins.flex(row, center, center);
+}
+.coment-3{
+    @include mixins.flex(row, center, center);
+}
+.main-reseñas{
+    margin: 10px 30%;
+    border: 3px solid black;
+}
+.container-boots{
+    @include mixins.flex(row, center, center);
+    gap: 3px;
+    flex-wrap: wrap;
+}
+.my-form{
+    display: flex;
+    @include mixins.flex(row, center, center);
+    gap: 3px;
+    flex-wrap: wrap;
+}
+.my-form-label{
+    @include mixins.flex(row, center, center);
+gap: 3px;
+flex-wrap: wrap;
+}
+.reseñas {
+    color: black;
+    font-size: 20;
+}
