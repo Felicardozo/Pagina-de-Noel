@@ -52,11 +52,18 @@ h4 {
 li {
   margin: 16px;
 }
-
+.img-yoga{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+}
 p {
   margin: 16px;
   color: blue;
 }
+
 
 div h3 {
   margin: 5px 20px;
@@ -73,6 +80,7 @@ div h3 {
 div {
   display: inline-block;
 }
+
 
 .nav-li {
   list-style-type: none;

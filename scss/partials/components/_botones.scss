@@ -1,0 +1,17 @@
+@use "../ultility/mixins";
+@use "../ultility/variables";
+
+.boton {
+    @include mixins.flex(row, center, center);
+    width: 10%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 12px;
+    background-color: yellowgreen;
+    margin: 0 auto;
+}
+.boton-de-compra{
+    @extend .boton;
+    background-color: pink;
+    
+}
