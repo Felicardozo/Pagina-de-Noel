@@ -659,6 +659,7 @@ div a img {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 100px;
 
   }
   .img {
