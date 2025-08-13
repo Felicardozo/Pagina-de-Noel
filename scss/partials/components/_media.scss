@@ -47,5 +47,21 @@
         display: flex;
         justify-content: center;
     }
-    
+    // Quien soy? Media//
+
+    .quien-soy-main-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .img-noel {
+      max-width: 150%;
+      margin: 20px;
+    }
+    //Planes media//
+    .grid-container{
+        max-width: 80%;
+
+    }
 }
+

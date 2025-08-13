@@ -1,0 +1,20 @@
+/* Error: There's already a module with namespace "media".
+ *     ,
+ * 9   | @use "./partials/components/media";
+ *     | ================================== original @use
+ * ... |
+ * 13  | @use "./partials/components/media";
+ *     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ new @use
+ *     '
+ *   scss\main.scss 13:1  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: There's already a module with namespace \"media\".\a     \2577 \a 9   \2502  @use \"./partials/components/media\";\d\a     \2502  \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  original @use\a... \2502 \a 13  \2502  @use \"./partials/components/media\";\d\a     \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ new @use\a     \2575 \a   scss\\main.scss 13:1  root stylesheet";
+}
