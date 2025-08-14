@@ -2,7 +2,8 @@
 @use "../ultility/mixins";
 @use "../ultility/variables";
 @media (max-width: 450px) {
-    .nav-link{
+  /*index*/
+  .nav-link {
     font-size: 14px;
     color: black;
     width: 70px;
@@ -11,15 +12,15 @@
     margin: 8px;
     padding: 6px;
     border: 2px solid black;
-    }
-    .noe-nutri{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 0 auto;
-        max-width: 300px
-    }
-    .boton{
+  }
+  .noe-nutri {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 300px;
+  }
+  .boton {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,27 +30,26 @@
     border-radius: 12px;
     background-color: yellowgreen;
     margin: 0 auto;
-    }
-    .locales{
+  }
+  .locales {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     max-width: 100px;
     gap: 20px;
-    }
-    .img{
-        width: 120px;
-    }
-    .store-names{
+  }
+  .img {
+    width: 120px;
+  }
+  .store-names {
     font-size: 14px;
-    }
-    .footer-index{
-        display: flex;
-        justify-content: center;
-    }
-    // Quien soy? Media//
-
-    .quien-soy-main-content {
+  }
+  .footer-index {
+    display: flex;
+    justify-content: center;
+  }
+  /* Quien soy? Media*/
+  .quien-soy-main-content {
       flex-direction: column;
       align-items: center;
       text-align: center;
@@ -58,10 +58,247 @@
       max-width: 150%;
       margin: 20px;
     }
-    //Planes media//
+    /*Planes media*/
     .grid-container{
-        max-width: 80%;
+      grid-template-columns: 1fr; 
+    grid-template-rows: auto; 
+    grid-template-areas: 
+      "title-complete-plan"
+      "complete-plan"
+      "title-intermediate-plan"
+      "intermediate-plan"
+      "title-basic-plan"
+      "basic-plan";
+    max-width: 100%;
+    gap: 10px; 
+    padding: 10px;
+    }
+    /*reseñas*/
+    .main-reseñas{
+      margin: 40px;
 
     }
 }
+@media (min-width: 451px) and (max-width: 769px) {
+  /*index*/
+  .nav-link {
+    font-size: 14px;
+    color: black;
+    width: 70px;
+    height: 50px;
+    text-decoration: none;
+    margin: 8px;
+    padding: 6px;
+    border: 2px solid black;
+  }
+  .noe-nutri {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 300px;
+  }
+  .img-yoga{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+  .boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 12px;
+    background-color: yellowgreen;
+    margin: 0 auto;
+  }
+  .locales {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    max-width: 100%;
+    gap: 20px;
 
+  }
+  .img {
+    width: 120px;
+  }
+  .store-names {
+    font-size: 14px;
+  }
+  .footer-index {
+    display: flex;
+    justify-content: center;
+  }
+  /* Quien soy? Media*/
+.quien-soy-main-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .img-noel {
+      max-width: 150%;
+      margin: 20px;
+    }
+    /*Planes media*/
+    .grid-container{
+      grid-template-columns: 1fr; 
+    grid-template-rows: auto; 
+    grid-template-areas: 
+      "title-complete-plan"
+      "complete-plan"
+      "title-intermediate-plan"
+      "intermediate-plan"
+      "title-basic-plan"
+      "basic-plan";
+    max-width: 100%;
+    gap: 10px; 
+    padding: 10px;
+    }
+    /*reseñas*/
+    .main-reseñas{
+      margin: 40px;
+
+    }
+}
+@media (min-width: 770px) and (max-width: 1024px) {
+  /*index*/
+  .nav-link {
+    font-size: 14px;
+    color: black;
+    width: 70px;
+    height: 50px;
+    text-decoration: none;
+    margin: 8px;
+    padding: 6px;
+    border: 2px solid black;
+  }
+  .noe-nutri {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 300px;
+  }
+  .img-yoga{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+  .boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 12px;
+    background-color: yellowgreen;
+    margin: 0 auto;
+  }
+  .locales {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  }
+  .img {
+    width: 120px;
+  }
+  .store-names {
+    font-size: 14px;
+  }
+  .footer-index {
+    display: flex;
+    justify-content: center;
+  }
+  /* Quien soy? Media*/
+.quien-soy-main-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .img-noel {
+      max-width: 150%;
+      margin: 20px;
+    }
+
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  /*index*/
+  .nav-link {
+    font-size: 14px;
+    color: black;
+    width: 70px;
+    height: 50px;
+    text-decoration: none;
+    margin: 8px;
+    padding: 6px;
+    border: 2px solid black;
+  }
+  .noe-nutri {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 300px;
+  }
+  .img-yoga{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+  .boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 12px;
+    background-color: yellowgreen;
+    margin: 0 auto;
+  }
+  .locales {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+
+  }
+  .img {
+    width: 120px;
+  }
+  .store-names {
+    font-size: 14px;
+  }
+  .footer-index {
+    display: flex;
+    justify-content: center;
+  }
+  /* Quien soy? Media*/
+
+    /*Planes media*/
+    .grid-container{
+      grid-template-columns: 1fr; 
+    grid-template-rows: auto; 
+    grid-template-areas: 
+      "title-complete-plan"
+      "complete-plan"
+      "title-intermediate-plan"
+      "intermediate-plan"
+      "title-basic-plan"
+      "basic-plan";
+    max-width: 100%;
+    gap: 10px; 
+    padding: 10px;
+    }
+    /*reseñas*/
+    .main-reseñas{
+      margin: 40px;
+
+    }
+}
