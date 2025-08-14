@@ -296,6 +296,13 @@ div a img {
 
 @media (max-width: 450px) {
   /*index*/
+  .logo {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    width: 40%;
+    height: 10%;
+  }
   .nav-link {
     font-size: 14px;
     color: black;
@@ -374,6 +381,13 @@ div a img {
 }
 @media (min-width: 451px) and (max-width: 769px) {
   /*index*/
+  .logo {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    width: 40%;
+    height: 10%;
+  }
   .nav-link {
     font-size: 14px;
     color: black;
